@@ -1,0 +1,13 @@
+
+<use name="fastjet"/>
+<use name="FWCore/Framework"/>
+<use name="FWCore/PluginManager"/>
+<use name="FWCore/ParameterSet"/>
+<use name="DataFormats/PatCandidates"/>
+<use name="EGamma/EGammaAnalysisTools"/>
+
+
+
+<export>
+  <lib   name="1"/>
+</export>

@@ -1,0 +1,48 @@
+import FWCore.ParameterSet.Config as cms
+maxEvents = cms.untracked.PSet( input = cms.untracked.int32(-1) )
+readFiles = cms.untracked.vstring()
+secFiles = cms.untracked.vstring()
+source = cms.Source ('PoolSource',fileNames = readFiles, secondaryFileNames = secFiles)
+readFiles.extend( [
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_18_1_YwN.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_21_1_nZg.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_20_1_zL8.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_23_1_f3G.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_24_1_fvt.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_10_1_mZY.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_11_1_ZhB.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_12_1_Rfr.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_13_1_kCe.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_14_1_Cga.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_15_1_RSJ.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_16_1_OrX.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_17_1_4P6.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_19_1_k1a.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_1_1_WEm.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_22_1_aPv.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_26_1_Oh8.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_25_1_eGw.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_27_1_Ar4.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_28_1_Ohs.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_29_1_2fJ.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_30_1_Xdg.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_32_1_p2I.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_2_1_2MK.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_31_1_Qfi.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_34_1_gqf.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_35_1_JZG.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_38_1_uLE.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_36_1_dMt.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_37_1_FvI.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_40_1_Lfg.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_39_1_By8.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_3_1_fqS.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_41_1_YZt.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_4_1_atG.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_42_1_WNq.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_6_1_pFy.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_5_1_k9w.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_7_1_Mm1.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_8_1_1AE.root",
+"/store/user/tomei/JHU_Bulk1000_ZZ_c02_v2/JHU_Bulk1000_ZZ_c02_STEP3/c8f8ed334db8a7d6f56c62266b1dfa5b/RSWW_AODSIM_9_1_Hdd.root"
+]);

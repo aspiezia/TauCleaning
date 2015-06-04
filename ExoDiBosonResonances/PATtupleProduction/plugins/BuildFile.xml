@@ -1,0 +1,14 @@
+
+<use name="DataFormats/PatCandidates"/>
+<use name="FWCore/Framework"/>
+<use name="fastjet"/>
+<use name="ExoDiBosonResonances/PATtupleProduction"/>
+
+
+<library name="ExoDiBosonResonancesPATtupleProductionPlugins" file="*.cc">
+  
+  <flags   EDM_PLUGIN="1"/>
+</library>
+
+
+
